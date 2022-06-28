@@ -13,7 +13,6 @@
  * @since 2022/6/25
  */
 int main () {
-
     //一个HelloWorld程序示例
     printf("Hello %s!\n",Name);
 

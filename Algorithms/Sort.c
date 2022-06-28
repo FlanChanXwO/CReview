@@ -98,3 +98,24 @@ void QuickSortDemo () {
         printf("arr[%d] = %d \n", i, arr[i]);
     }
 }
+
+
+/**
+* 直接选择排序
+ * @param arr 数组首地址
+ * @param len 数组长度
+*/
+void directSelectionSort(int *arr, int len) {
+    int c;
+    for (int i = 0; i < len - 1; i++) {
+        c = i;
+        for (int j = i + 1; j < len; j++) {
+            if (arr[c] > arr[j]) {
+                c = j;
+            }
+        }
+        int t = arr[i];
+        arr[i] = arr[c];
+        arr[c] = t;
+    }
+}
