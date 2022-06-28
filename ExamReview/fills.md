@@ -31,7 +31,7 @@ void main() {
     }
 }
 ```
-3、以下函数的功能是在数组s中从指定位置start处开始反向查找元素x并返回位置p，请观察下方代码以完成第2题。
+3、以下函数的功能是在数组s中从指定位置start处开始反向查找元素x并返回位置p。
 - 样例代码演示：
 ```c
 int search(int s[],int Length,int x,int* p,int start){

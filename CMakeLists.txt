@@ -10,5 +10,3 @@ add_executable(CReview3 Algorithms/inputAndOutput.c)
 add_executable(CReview4 Algorithms/MathFunc.c)
 add_executable(CReview5 Algorithms/BaseGrammar.c)
 add_executable(CReview6 Algorithms/Point.c)
-
-add_executable(CReview7 App.c)
