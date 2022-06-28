@@ -47,7 +47,7 @@ double f(int n) {
 }
 
 int main () {
-    int n = 2;
+    int n = 20;
     printf("f(%d) = %.2lf\n",n,f(n));
 
     return 0;
