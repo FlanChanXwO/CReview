@@ -4,13 +4,16 @@
 void BubbleSortDemo();
 //快速排序示例
 void QuickSortDemo();
-
+//插入排序示例
+void insertSortDemo();
 
 int main() {
     //调用冒泡示例函数
     //BubbleSortDemo();
     //调用快速排序示例函数
-    QuickSortDemo();
+    //QuickSortDemo();
+    //调用插入排序示例函数
+    insertSortDemo();
 
     return 0;
 }
@@ -119,3 +122,32 @@ void directSelectionSort(int *arr, int len) {
         arr[c] = t;
     }
 }
+
+/**
+ * 插入排序
+ * @param arr 数组首地址
+ * @param len 数组长度
+ */
+void insertionSort(int *arr ,int len) {
+    for (int i = 1, j; i < len; i++) {
+        int temp = arr[i];
+        for (j = i - 1; j >= 0 && arr[j] > temp; j--) {
+            arr[j + 1] = arr[j];
+        }
+        arr[j + 1] = temp;
+    }
+}
+
+/**
+ * 插入排序使用示例
+ */
+void insertSortDemo() {
+    int arr[] = {5, 23, 3, 16, 98, 388, 28,15,22,69};
+    insertionSort(arr, (sizeof(arr) / sizeof(arr[0])));
+    //遍历排序后的数组
+    for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++) {
+        printf("arr[%d] = %d \n", i, arr[i]);
+    }
+}
+
+
